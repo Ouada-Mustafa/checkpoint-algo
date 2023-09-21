@@ -1,0 +1,10 @@
+function palindrome(s:STRING)
+var
+Begin
+if s.length<=1
+return true
+end if
+if s[0]<>s[s.length-1]
+return false
+s=substring(s,1,s.length-2)
+return palindrome(s)
